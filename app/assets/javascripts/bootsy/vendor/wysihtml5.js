@@ -6857,6 +6857,23 @@ wysihtml5.commands.bold = {
   }
 };
 
+wysihtml5.commands.blockquote = {
+    // command to create blockquote in editor
+  exec: function(composer, command) {
+    console.log('new command fn happening')
+    return wysihtml5.commands.formatInline.exec(composer, command, "blockquote");
+  },
+
+  state: function(composer, command) {
+    // element.ownerDocument.queryCommandState("bold") results:
+    // firefox: only <b>
+    // chrome:  <b>, <strong>, <h1>, <h2>, ...
+    // ie:      <b>, <strong>
+    // opera:   <b>, <strong>
+    return wysihtml5.commands.formatInline.state(composer, command, "blockquote");
+  }
+};
+
 (function(wysihtml5) {
   var undef,
       NODE_NAME = "A",
