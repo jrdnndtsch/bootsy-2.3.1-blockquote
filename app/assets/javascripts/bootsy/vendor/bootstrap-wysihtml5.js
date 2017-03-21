@@ -117,6 +117,15 @@
                 "<li><div class='wysihtml5-colors' data-wysihtml5-command-value='orange'></div><a class='wysihtml5-colors-title' data-wysihtml5-command='foreColor' data-wysihtml5-command-value='orange' role='menuitem'>" + locale.colours.orange + "</a></li>" +
               "</ul>" +
             "</li>";
+        }, 
+        "blockquote": function(locale, options) {
+            // create the html for the blockquote in the wisywig toolbar
+            var size = (options && options.size) ? ' btn-'+options.size : '';
+            return "<li>" +
+              "<div class='btn-group'>" +
+                "<a class='btn btn-default " + size + "' data-wysihtml5-command='blockquote' title='" + locale.blockquote.insert + "' tabindex='-1'><i class='glyphicon glyphicon-heart-empty'></i></a>" +
+              "</div>" +
+            "</li>";
         }
     };
 
