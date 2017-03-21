@@ -20,7 +20,8 @@ module Bootsy
     html: false,
     link: true,
     image: true,
-    color: true
+    color: true,
+    blockquote: true
   }
 
   # Image versions available
