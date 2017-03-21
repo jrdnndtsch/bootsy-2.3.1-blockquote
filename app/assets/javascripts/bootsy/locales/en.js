@@ -46,6 +46,9 @@
       blue: 'Blue',
       orange: 'Orange'
     },
+    blockquote: {
+      insert: 'Add Blockquote'
+    },
     bootsy: {
       alertUnsaved: 'You have unsaved changes.',
       error: 'Something went wrong. Please try again later.'
