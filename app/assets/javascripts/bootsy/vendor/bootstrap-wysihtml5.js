@@ -123,7 +123,7 @@
             var size = (options && options.size) ? ' btn-'+options.size : '';
             return "<li>" +
               "<div class='btn-group'>" +
-                "<a class='btn btn-default " + size + "' data-wysihtml5-command='blockquote' title='" + locale.blockquote.insert + "' tabindex='-1'><i class='glyphicon glyphicon-heart-empty'></i></a>" +
+                "<a class='btn btn-default " + size + "' data-wysihtml5-command='blockquote' title='" + locale.blockquote.insert + "' tabindex='-1'><i class='glyphicon glyphicon-comment'></i></a>" +
               "</div>" +
             "</li>";
         }
